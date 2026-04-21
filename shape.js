@@ -29,9 +29,9 @@ export const SHAPE_CONFIG = {
   lineOpacity:   0.75,
   fresnelBoost:  0.45,   // edge glow intensity (0 disables)
 
-  // Palette (auto-swapped in dark mode)
-  light: { stroke: '#1A1713', fill: '#F5F2EC' },
-  dark:  { stroke: '#EFEAE0', fill: '#15130F' },
+  // Palette (auto-swapped in dark mode) — keep in sync with style.css
+  light: { stroke: '#161410', fill: '#F4F0E8' },
+  dark:  { stroke: '#F2EBE0', fill: '#141210' },
 
   // Canvas
   heightVh: 44,          // viewport-height % for the container
