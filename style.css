@@ -191,10 +191,46 @@ main,
   margin: clamp(0.75rem, 2.5vw, 2rem) 0 clamp(1.75rem, 4vw, 3.5rem);
   pointer-events: none;
   position: relative;
+  isolation: isolate;
   opacity: 0;
   animation: shape-in 1.35s var(--ease) 0.12s forwards;
   mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, #000 52%, transparent 100%);
   -webkit-mask-image: radial-gradient(ellipse 85% 75% at 50% 45%, #000 52%, transparent 100%);
+}
+
+/* Frosted glass plane behind the 3D wireframe */
+.hero-shape::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--bg-elev) 42%, transparent);
+  border: 1px solid color-mix(in oklab, var(--ink) 8%, transparent);
+  box-shadow:
+    inset 0 1px 0 color-mix(in oklab, #fff 55%, transparent),
+    0 12px 40px color-mix(in oklab, var(--ink) 6%, transparent);
+  backdrop-filter: blur(18px) saturate(1.25);
+  -webkit-backdrop-filter: blur(18px) saturate(1.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-shape::before {
+    background: color-mix(in oklab, var(--bg-elev) 38%, transparent);
+    border-color: color-mix(in oklab, var(--ink) 10%, transparent);
+    box-shadow:
+      inset 0 1px 0 color-mix(in oklab, #fff 12%, transparent),
+      0 12px 48px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .hero-shape::before {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: color-mix(in oklab, var(--bg-elev) 72%, transparent);
+  }
 }
 
 @keyframes shape-in {
@@ -203,6 +239,8 @@ main,
 }
 
 .hero-shape canvas {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100% !important;
   height: 100% !important;
