@@ -12,6 +12,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -21,6 +28,8 @@
   </nav>
 
   <main>
+
+    <div id="hero-shape" class="hero-shape reveal" style="--d:0" aria-hidden="true"></div>
 
     <header class="hero">
       <p class="eyebrow reveal" style="--d:0">Product Designer · San Francisco</p>
@@ -117,5 +126,6 @@
   </footer>
 
   <script src="main.js"></script>
+  <script type="module" src="shape.js"></script>
 </body>
 </html>

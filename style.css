@@ -112,6 +112,25 @@ main,
 .nav-link:focus-visible { color: var(--ink); outline: none; }
 
 /* ─────────────────────────────────────────────
+   HERO SHAPE (3D)
+──────────────────────────────────────────── */
+.hero-shape {
+  width: 100%;
+  height: clamp(260px, 44vh, 520px);
+  margin: clamp(1rem, 3vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
+  pointer-events: none;
+  position: relative;
+  mask-image: radial-gradient(ellipse at center, #000 55%, transparent 92%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, transparent 92%);
+}
+
+.hero-shape canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ─────────────────────────────────────────────
    HERO
 ──────────────────────────────────────────── */
 .hero {
