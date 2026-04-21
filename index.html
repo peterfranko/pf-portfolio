@@ -14,122 +14,128 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <nav class="nav" aria-label="Primary">
-    <a href="/" class="nav-mark">Peter Franko</a>
-    <a href="mailto:peterbfranko@gmail.com" class="nav-link">Contact <span aria-hidden="true">↗</span></a>
-  </nav>
+  <div class="layout-page">
+    <nav class="nav" aria-label="Primary">
+      <a href="/" class="nav-mark">Peter Franko</a>
+      <a href="mailto:peterbfranko@gmail.com" class="nav-link">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
 
-  <main>
+    <main id="main" class="layout-main">
 
-    <div class="hero-aurora" aria-hidden="true">
-      <div class="hero-aurora__blobs">
-        <span class="hero-aurora__blob hero-aurora__blob--1"></span>
-        <span class="hero-aurora__blob hero-aurora__blob--2"></span>
-        <span class="hero-aurora__blob hero-aurora__blob--3"></span>
-        <span class="hero-aurora__blob hero-aurora__blob--4"></span>
-      </div>
-      <div class="hero-aurora__orbs">
-        <span class="hero-aurora__orb hero-aurora__orb--1"></span>
-        <span class="hero-aurora__orb hero-aurora__orb--2"></span>
-        <span class="hero-aurora__orb hero-aurora__orb--3"></span>
-        <span class="hero-aurora__orb hero-aurora__orb--4"></span>
-        <span class="hero-aurora__orb hero-aurora__orb--5"></span>
-      </div>
-    </div>
-
-    <header class="hero">
-      <p class="eyebrow reveal" style="--d:0">Product Designer · Brooklyn</p>
-      <h1 class="hero-name reveal" style="--d:1">Peter&nbsp;Franko</h1>
-      <p class="hero-lede reveal" style="--d:2">
-        I design consumer products at <strong>Meta</strong>, currently focused on experiences for the next generation of people on the internet. For the past eight years I&rsquo;ve worked at the intersection of craft, integrity, and scale.
-      </p>
-    </header>
-
-    <section class="block" id="work" aria-labelledby="work-label">
-      <div class="block-head reveal" style="--d:3">
-        <span class="label" id="work-label">Selected Work</span>
-        <span class="label label--dim">2018 — Now</span>
+      <div class="hero-aurora layout-full" aria-hidden="true">
+        <div class="hero-aurora__blobs">
+          <span class="hero-aurora__blob hero-aurora__blob--1"></span>
+          <span class="hero-aurora__blob hero-aurora__blob--2"></span>
+          <span class="hero-aurora__blob hero-aurora__blob--3"></span>
+          <span class="hero-aurora__blob hero-aurora__blob--4"></span>
+        </div>
+        <div class="hero-aurora__orbs">
+          <span class="hero-aurora__orb hero-aurora__orb--1"></span>
+          <span class="hero-aurora__orb hero-aurora__orb--2"></span>
+          <span class="hero-aurora__orb hero-aurora__orb--3"></span>
+          <span class="hero-aurora__orb hero-aurora__orb--4"></span>
+          <span class="hero-aurora__orb hero-aurora__orb--5"></span>
+        </div>
       </div>
 
-      <ol class="projects">
-        <li class="project reveal" style="--d:4">
-          <div class="project-row project-row--soon">
-            <span class="project-index">01</span>
-            <span class="project-title">Youth</span>
-            <span class="project-org">Meta</span>
-            <span class="project-period">2023 — Now</span>
-            <span class="project-soon">Coming soon</span>
+      <header class="hero layout-prose">
+        <p class="eyebrow reveal" style="--d:0">Product Designer · Brooklyn</p>
+        <h1 class="hero-name reveal" style="--d:1">Peter&nbsp;Franko</h1>
+        <p class="hero-lede reveal" style="--d:2">
+          I design consumer products at <strong>Meta</strong>, currently focused on experiences for the next generation of people on the internet. For the past eight years I&rsquo;ve worked at the intersection of craft, integrity, and scale.
+        </p>
+      </header>
+
+      <section class="block layout-prose" id="work" aria-labelledby="work-label">
+        <div class="block-head reveal" style="--d:3">
+          <span class="label" id="work-label">Selected Work</span>
+          <span class="label label--dim">2018 — Now</span>
+        </div>
+
+        <ol class="projects">
+          <li class="project reveal" style="--d:4">
+            <div class="project-row project-row--soon">
+              <span class="project-index">01</span>
+              <span class="project-title">Youth</span>
+              <div class="project-meta">
+                <span class="project-org">Meta</span>
+                <span class="project-period">2023 — Now</span>
+              </div>
+            </div>
+          </li>
+          <li class="project reveal" style="--d:5">
+            <div class="project-row project-row--soon">
+              <span class="project-index">02</span>
+              <span class="project-title">Civic</span>
+              <div class="project-meta">
+                <span class="project-org">Meta</span>
+                <span class="project-period">2021 — 2023</span>
+              </div>
+            </div>
+          </li>
+          <li class="project reveal" style="--d:6">
+            <div class="project-row project-row--soon">
+              <span class="project-index">03</span>
+              <span class="project-title">Integrity</span>
+              <div class="project-meta">
+                <span class="project-org">Meta</span>
+                <span class="project-period">2018 — 2020</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="block layout-prose" id="background" aria-labelledby="bg-label">
+        <div class="block-head reveal" style="--d:7">
+          <span class="label" id="bg-label">Background</span>
+        </div>
+
+        <dl class="timeline">
+          <div class="tl-row reveal" style="--d:8">
+            <dt>2014</dt>
+            <dd>
+              <span class="tl-title">B.Des Interaction Design</span>
+              <span class="tl-sub">University of Washington, Seattle</span>
+            </dd>
           </div>
-        </li>
-        <li class="project reveal" style="--d:5">
-          <div class="project-row project-row--soon">
-            <span class="project-index">02</span>
-            <span class="project-title">Civic</span>
-            <span class="project-org">Meta</span>
-            <span class="project-period">2021 — 2023</span>
-            <span class="project-soon">Coming soon</span>
+          <div class="tl-row reveal" style="--d:9">
+            <dt>2018</dt>
+            <dd>
+              <span class="tl-title">Meta Integrity</span>
+              <span class="tl-sub">Central Integrity (Trust &amp; Safety)</span>
+            </dd>
           </div>
-        </li>
-        <li class="project reveal" style="--d:6">
-          <div class="project-row project-row--soon">
-            <span class="project-index">03</span>
-            <span class="project-title">Integrity</span>
-            <span class="project-org">Meta</span>
-            <span class="project-period">2018 — 2020</span>
-            <span class="project-soon">Coming soon</span>
+          <div class="tl-row reveal" style="--d:10">
+            <dt>2021</dt>
+            <dd>
+              <span class="tl-title">Meta Civic</span>
+              <span class="tl-sub">Civic Connections &amp; Civic Integrity</span>
+            </dd>
           </div>
-        </li>
-      </ol>
-    </section>
+          <div class="tl-row reveal" style="--d:11">
+            <dt>2023</dt>
+            <dd>
+              <span class="tl-title">Meta Youth</span>
+              <span class="tl-sub">Teen &amp; Family Experiences</span>
+            </dd>
+          </div>
+        </dl>
+      </section>
 
-    <section class="block" id="background" aria-labelledby="bg-label">
-      <div class="block-head reveal" style="--d:7">
-        <span class="label" id="bg-label">Background</span>
-      </div>
+      <section class="block block--contact layout-prose reveal" style="--d:12" aria-labelledby="contact-label">
+        <span class="label" id="contact-label">Get in touch</span>
+        <a href="mailto:peterbfranko@gmail.com" class="contact-line">peterbfranko@gmail.com</a>
+      </section>
 
-      <dl class="timeline">
-        <div class="tl-row reveal" style="--d:8">
-          <dt>2014</dt>
-          <dd>
-            <span class="tl-title">B.Des Interaction Design</span>
-            <span class="tl-sub">University of Washington, Seattle</span>
-          </dd>
-        </div>
-        <div class="tl-row reveal" style="--d:9">
-          <dt>2018</dt>
-          <dd>
-            <span class="tl-title">Meta Integrity</span>
-            <span class="tl-sub">Central Integrity (Trust &amp; Safety)</span>
-          </dd>
-        </div>
-        <div class="tl-row reveal" style="--d:10">
-          <dt>2021</dt>
-          <dd>
-            <span class="tl-title">Meta Civic</span>
-            <span class="tl-sub">Civic Connections &amp; Civic Integrity</span>
-          </dd>
-        </div>
-        <div class="tl-row reveal" style="--d:11">
-          <dt>2023</dt>
-          <dd>
-            <span class="tl-title">Meta Youth</span>
-            <span class="tl-sub">Teen &amp; Family Experiences</span>
-          </dd>
-        </div>
-      </dl>
-    </section>
+    </main>
 
-    <section class="block block--contact reveal" style="--d:12" aria-labelledby="contact-label">
-      <span class="label" id="contact-label">Get in touch</span>
-      <a href="mailto:peterbfranko@gmail.com" class="contact-line">peterbfranko@gmail.com</a>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <span>© 2026 Peter Franko</span>
-  </footer>
+    <footer class="footer">
+      <span>© 2026 Peter Franko</span>
+    </footer>
+  </div>
 
   <script src="main.js"></script>
 </body>
