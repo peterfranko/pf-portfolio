@@ -281,6 +281,9 @@ function buildGeometry(cfg) {
 ──────────────────────────────────────────── */
 const host = document.querySelector('#hero-shape');
 if (host) {
-  const api = mountShape(host);
-  window.shape = api; // live-tune from devtools
+  try {
+    window.shape = mountShape(host);
+  } catch (err) {
+    console.error('[hero-shape] failed to mount:', err);
+  }
 }

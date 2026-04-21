@@ -116,12 +116,19 @@ main,
 ──────────────────────────────────────────── */
 .hero-shape {
   width: 100%;
-  height: clamp(260px, 44vh, 520px);
+  height: clamp(280px, 46vh, 540px);
   margin: clamp(1rem, 3vw, 2.5rem) 0 clamp(2rem, 5vw, 4rem);
   pointer-events: none;
   position: relative;
-  mask-image: radial-gradient(ellipse at center, #000 55%, transparent 92%);
-  -webkit-mask-image: radial-gradient(ellipse at center, #000 55%, transparent 92%);
+  opacity: 0;
+  animation: shape-in 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards;
+  mask-image: radial-gradient(ellipse at center, #000 60%, transparent 96%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 60%, transparent 96%);
+}
+
+@keyframes shape-in {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: none; }
 }
 
 .hero-shape canvas {
