@@ -25,19 +25,103 @@
     <main id="main" class="layout-main">
 
       <div class="hero-aurora layout-full" aria-hidden="true">
-        <div class="hero-aurora__blobs">
-          <span class="hero-aurora__blob hero-aurora__blob--1"></span>
-          <span class="hero-aurora__blob hero-aurora__blob--2"></span>
-          <span class="hero-aurora__blob hero-aurora__blob--3"></span>
-          <span class="hero-aurora__blob hero-aurora__blob--4"></span>
-        </div>
-        <div class="hero-aurora__orbs">
-          <span class="hero-aurora__orb hero-aurora__orb--1"></span>
-          <span class="hero-aurora__orb hero-aurora__orb--2"></span>
-          <span class="hero-aurora__orb hero-aurora__orb--3"></span>
-          <span class="hero-aurora__orb hero-aurora__orb--4"></span>
-          <span class="hero-aurora__orb hero-aurora__orb--5"></span>
-        </div>
+        <div class="hero-aurora__wash"></div>
+        <div class="hero-aurora__mesh"></div>
+        <svg
+          class="hero-aurora__schema"
+          viewBox="0 0 1200 520"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient id="hero-schema-fade" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="currentColor" stop-opacity="0" />
+              <stop offset="12%" stop-color="currentColor" stop-opacity="0.55" />
+              <stop offset="88%" stop-color="currentColor" stop-opacity="0.55" />
+              <stop offset="100%" stop-color="currentColor" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <g class="hero-aurora__drift">
+            <line
+              x1="48"
+              y1="212"
+              x2="1152"
+              y2="212"
+              class="hero-aurora__ln hero-aurora__ln--solid hero-aurora__ln--hairline"
+              stroke="url(#hero-schema-fade)"
+            />
+            <line
+              x1="168"
+              y1="118"
+              x2="1032"
+              y2="118"
+              class="hero-aurora__ln hero-aurora__ln--dash hero-aurora__ln--medium"
+              stroke-dasharray="5 13"
+            />
+            <line
+              x1="156"
+              y1="36"
+              x2="156"
+              y2="468"
+              class="hero-aurora__ln hero-aurora__ln--dot hero-aurora__ln--fine"
+              stroke-dasharray="1.5 11"
+              stroke-linecap="round"
+            />
+            <line
+              x1="268"
+              y1="52"
+              x2="948"
+              y2="432"
+              class="hero-aurora__ln hero-aurora__ln--dash hero-aurora__ln--fine"
+              stroke-dasharray="3 9"
+            />
+            <path
+              d="M 752 392 A 210 210 0 0 1 1048 148"
+              fill="none"
+              class="hero-aurora__ln hero-aurora__ln--dot hero-aurora__ln--medium"
+              stroke-dasharray="1 14"
+              stroke-linecap="round"
+            />
+            <path
+              d="M 628 72 A 168 168 0 0 1 796 248"
+              fill="none"
+              class="hero-aurora__ln hero-aurora__ln--solid hero-aurora__ln--hairline"
+            />
+            <path
+              d="M 892 268 L 892 380 M 892 268 L 1012 268 M 1012 268 L 1012 380 M 1012 380 L 892 380"
+              fill="none"
+              class="hero-aurora__ln hero-aurora__ln--dash hero-aurora__ln--fine"
+              stroke-dasharray="4 6"
+            />
+            <line
+              x1="372"
+              y1="312"
+              x2="718"
+              y2="312"
+              class="hero-aurora__ln hero-aurora__ln--solid hero-aurora__ln--ghost"
+            />
+            <line
+              x1="412"
+              y1="344"
+              x2="782"
+              y2="344"
+              class="hero-aurora__ln hero-aurora__ln--dot hero-aurora__ln--fine"
+              stroke-dasharray="1 9"
+              stroke-linecap="round"
+            />
+            <line
+              x1="520"
+              y1="96"
+              x2="520"
+              y2="196"
+              class="hero-aurora__ln hero-aurora__ln--dash hero-aurora__ln--fine"
+              stroke-dasharray="2 7"
+            />
+            <circle cx="520" cy="212" r="3.2" class="hero-aurora__node" />
+            <circle cx="156" cy="212" r="2.4" class="hero-aurora__node hero-aurora__node--soft" />
+            <circle cx="892" cy="268" r="2.4" class="hero-aurora__node hero-aurora__node--soft" />
+          </g>
+        </svg>
       </div>
 
       <header class="hero layout-prose">
