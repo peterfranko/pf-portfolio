@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">Peter Franko ù Product Designer</title>
+  <desc id="og-desc">Portfolio preview card</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf8f3"/>
+      <stop offset="45%" stop-color="#f4f0e8"/>
+      <stop offset="100%" stop-color="#e8e2d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="84" y="84" width="1032" height="462" fill="none" stroke="#161410" stroke-opacity="0.08"/>
+  <line x1="120" y1="520" x2="1080" y2="520" stroke="#5c5344" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="120" y="280" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="300" fill="#161410" letter-spacing="-0.02em">Peter Franko</text>
+  <text x="120" y="360" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="22" font-weight="400" fill="#454038" letter-spacing="0.18em">PRODUCT DESIGNER &#183; BROOKLYN</text>
+</svg>
