@@ -46,7 +46,7 @@
     --text-body: clamp(1rem, 1.05vw, 1.125rem);
     --text-body-lg: clamp(1.08rem, 1.35vw, 1.38rem);
     --text-lede: clamp(1.85rem, 4.5vw, 3.25rem);
-    --text-display: clamp(2.85rem, 8.75vw, 6.25rem);
+    --text-display: clamp(2.45rem, 7vw, 5.15rem);
     --text-project: clamp(1.85rem, 4vw, 3rem);
     --text-timeline: 1.3rem;
     --text-timeline-sub: 0.92rem;
