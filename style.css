@@ -782,7 +782,7 @@
     letter-spacing: var(--tracking-eyebrow);
     text-transform: uppercase;
     color: var(--color-text-muted);
-    margin-bottom: var(--space-hero-after-eyebrow);
+    margin-bottom: var(--space-hero-after-title);
   }
 
   .hero-name {
@@ -791,7 +791,7 @@
     font-size: var(--text-display);
     line-height: 0.92;
     letter-spacing: var(--tracking-tight);
-    margin-bottom: var(--space-hero-after-title);
+    margin-bottom: var(--space-hero-after-eyebrow);
   }
 
   .hero-lede {
