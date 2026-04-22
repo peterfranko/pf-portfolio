@@ -95,6 +95,8 @@
     --space-prose-stack-lift: clamp(1.5rem, 5vw, 3rem);
     /* Additional lift for hero copy only; does not affect .hero-aurora position or size */
     --space-hero-text-extra-lift: clamp(2.5rem, 8vw, 6rem);
+    /* First prose section after hero: nudge up into aurora band (hero stays on top via z-index) */
+    --space-prose-into-aurora: clamp(0.65rem, 2.25vw, 1.5rem);
 
     /* ─── Layout ─── */
     --layout-measure: 42rem;
@@ -359,8 +361,18 @@
   }
 
   .layout-main > .hero.layout-prose {
+    position: relative;
+    z-index: var(--z-overlay);
     margin-top: calc(
       -1 * (var(--space-prose-stack-lift) + var(--space-hero-text-extra-lift))
+    );
+  }
+
+  .layout-main > .hero.layout-prose + .layout-prose {
+    position: relative;
+    z-index: var(--z-raised);
+    margin-top: calc(
+      -1 * (var(--space-prose-stack-lift) + var(--space-prose-into-aurora))
     );
   }
 }
